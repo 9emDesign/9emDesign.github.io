@@ -1,4 +1,4 @@
-root {
+*{
   margin: 0;
   padding: 0;
   font-family: verdana,sans-serif;
@@ -65,11 +65,11 @@ root {
     height: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 400px 40px auto auto auto auto auto auto 50px;
+    grid-template-rows: 400px auto auto auto auto auto auto auto 50px;
     grid-row-gap: 5px;
-    grid-template-areas: "header header header header header header header header header header header header" "onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent onethirdContent"
+    grid-template-areas: "header header header header header header header header header header header header"
     "twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar"
-    "sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar" "content content content content content content content content content content content content" "flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content" "flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02"
+     "content content content content content content content content content content content content" "flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content" "flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02"
     "flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
@@ -102,8 +102,23 @@ root {
   }
   h1{font-size: 3em;color:#a41d08;margin: auto;padding: 50px;}
   body header{
-  height: 100vh;
+    background-image: url(../images/header1.jpg);
+    background-repeat: no-repeat;
+
+  height: 400px;
   }
+  aside.twoThirds {
+    display:none;
+    padding: 5px;
+    background-color: burlywood;
+    
+  }
+  .reverse_twoThirds{
+    display:none;
+    background-color: blueviolet;
+
+    }
+
 
   }
 
@@ -117,7 +132,7 @@ root {
         margin: 0 auto;
 
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 400px auto auto auto auto 1fr 50px;
+        grid-template-rows: 390px auto auto auto auto 1fr 50px;
         grid-row-gap: 5px;
         grid-template-areas: 'header header header header header header header header header header header header' 'sidebar sidebar sidebar sidebar content content content content content content content content'
         'twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar onethirdContent onethirdContent onethirdContent onethirdContent'
@@ -131,21 +146,24 @@ root {
     }
     h1{font-size: 2.5em;color:#8221c6;margin: auto;padding: 100px;}
     body header{
-    height: 100vh;
+      background-image: url(../images/circle_grid_top.png),url(../images/header1366.jpg);
+      background-repeat: no-repeat;
+
+    height: 400px;
     }
 
 }
 
-@media screen and (min-width: 1025px) and (max-width:7680px){
+@media screen and (min-width: 1025px) and (max-width:2559px){
   .container {
     margin: 0 auto;
-    max-width: 7680px;
+    max-width: 2560px;
     height: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 400px auto auto auto auto auto 50px;
+    grid-template-rows: 390px auto auto auto auto auto 50px;
     grid-row-gap: 5px;
-    grid-template-areas: 'header header header header header header header header header header header header' 'sidebar sidebar sidebar sidebar content content content content content content content content'
+    grid-template-areas: 'header header header header header header header header header header header header' 'sidebar sidebar sidebar content content content content content content content content content'
     'twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar onethirdContent onethirdContent onethirdContent onethirdContent'
     'flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content' 'flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02'
     'flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03'
@@ -153,9 +171,9 @@ root {
   }
 
   body header{
-    background-image: url(../images/header1366.png);
+    background-image: url(../images/circle_grid_top.png),url(../images/headerUHD.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 400px;
   }
   h1{font-size: 4.5em;color:#0fa3f6;margin: auto;padding: 150px;}
   p{font-size: 13pt;}
@@ -176,6 +194,86 @@ img{float: left;margin: 2px 5px 5px 2px;clear:both;}
     opacity: 0.8;
   }
 
+  @media screen and (min-width: 2560px) and (max-width:4096px){
+    .container {
+      margin: 0 auto;
+      max-width: 4096px;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 390px auto auto auto auto auto 50px;
+      grid-row-gap: 5px;
+      grid-template-areas: 'header header header header header header header header header header header header' 'sidebar content content content content content content content content content content content'
+      'twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar onethirdContent onethirdContent onethirdContent onethirdContent'
+      'flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content' 'flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02'
+      'flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03'
+      'footer footer footer footer footer footer footer footer footer footer footer footer';
+    }
+
+    body header{
+      background-image: url(../images/circle_grid_top.png),url(../images/headerUHD.jpg);
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+    h1{font-size: 4.5em;color:#0fa3f6;margin: auto;padding: 150px;}
+    p{font-size: 13pt;}
+    .char_oneThird{width: 100mm;border: 1px solid #de2658;float: left;margin: 5px;}
+    .char_twoThirds{width: 100mm;border: 1px solid #067306;float: left;margin: 5px;}
+
+  }
+  img{float: left;margin: 2px 5px 5px 2px;clear:both;}
+
+  .nav_bar li{
+    list-style-type: none;
+    float: left;
+    }
+    .nav_bar {height: 40px;
+      position: relative;top: -5px;left: -5px;
+      width: 100%;
+      background-color: #ffffff;
+      opacity: 0.8;
+    }
+
+    @media screen and (min-width: 5120px) and (max-width:7680px){
+      .container {
+        margin: 0 auto;
+        max-width: 7670px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 390px auto auto auto auto auto 50px;
+        grid-row-gap: 5px;
+        grid-template-areas: 'header header header header header header header header header header header header' 'sidebar content content content content content content content content content content content'
+        'twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar twothirdSidebar onethirdContent onethirdContent onethirdContent onethirdContent'
+        'flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content flex_content' 'flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02 flex_content_02'
+        'flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03 flex_content_03'
+        'footer footer footer footer footer footer footer footer footer footer footer footer';
+      }
+
+      body header{
+        background-image: url(../images/circle_grid_top.png),url(../images/headerUHD1.jpg);
+        background-repeat: no-repeat;
+        height: 400px;
+      }
+      h1{font-size: 4.5em;color:#0fa3f6;margin: auto;padding: 150px;}
+      p{font-size: 13pt;}
+      .char_oneThird{width: 100mm;border: 1px solid #de2658;float: left;margin: 5px;}
+      .char_twoThirds{width: 100mm;border: 1px solid #067306;float: left;margin: 5px;}
+
+    }
+    img{float: left;margin: 2px 5px 5px 2px;clear:both;}
+
+    .nav_bar li{
+      list-style-type: none;
+      float: left;
+      }
+      .nav_bar {height: 40px;
+        position: relative;top: -5px;left: -5px;
+        width: 100%;
+        background-color: #ffffff;
+        opacity: 0.8;
+      }
+
 
 h2 {
   margin: 0;
@@ -191,7 +289,7 @@ header {
   grid-area: header;
   padding: 5px;
   background-color: #000000;
-  background-image: url(../images/header1.jpg);
+  background-image: url(../images/circle_grid_top.png),url(../images/header1.jpg);
   background-repeat: no-repeat;
 
 
@@ -204,10 +302,13 @@ nav {
 
 }
 
-aside {
+aside.twoThirds {
   grid-area: sidebar;
   padding: 5px;
   background-color: burlywood;
+  background-image: url(../images/circle_grid_bottom.png);
+  background-repeat: no-repeat;
+
 
 }
 
@@ -216,10 +317,9 @@ section {
   padding: 5px;
   background-color: coral;
   }
-.twoThirds{
+.reverse_twoThirds{
   grid-area: onethirdContent;
   background-color: blueviolet;
-
 
   }
 .oneThird{
