@@ -86,14 +86,14 @@
     font-family: roboto,sans-serif;
   }
 
-
   #logo {
     position: relative;
     left: 0px;
-    top: -36px;
+    top: -52px;
     padding: 0;
     width: 40%;
     height: 40%;
+    margin: 0;
   }
 
   h1 {
@@ -163,13 +163,12 @@
   }
 
   #logo {
-    margin: -5px 0 0 0;
     padding: 0;
     width: 30%;
     height: 30%;
-    position: absolute;
-    left: 0px;
-    top: 15px;
+    position: relative;
+    left: -50px;
+    top: -5px;
   }
 
   h1 {
@@ -297,13 +296,12 @@
   }
 
   #logo {
-    position: absolute;
-    top: 50px;
-    left: -88px;
-    margin: -5px 0 0 0;
+    position: relative;
+    top: 0;
+    left: -325px;
     padding: 0;
-    width: 30%;
-    height: 30%;
+    width: 60%;
+    height: 60%;
   }
 
   h1 {
