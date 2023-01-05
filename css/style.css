@@ -372,11 +372,11 @@
 
   #logo {
     position: relative;
-    top: 0;
-    left: -110px;
+    top: -5px;
+    left: -180px;
     padding: 0;
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
   }
 
   
