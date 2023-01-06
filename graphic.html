@@ -1,508 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="9em Design Studio is a small design agency focused on graphic and web design services for the small and medium sized businesses.If your'e a large business or corporation we will be glad to help you with your needs.">
-  <meta name="keywords" content="graphic design portfolio,graphic design artist,a graphic designer,a graphic designer website,graphic design business,graphic design freelance,graphic design hourly rate,graphic design ideas,i'm graphic designer,i need graphic designer,i do graphic design,graphic design job description,graphic design layout,graphic design maker,graphic design near me,graphic designer,graphic design online,graphic design projects,graphic design remote jobs,graphic design services,graphic design website,graphic design work,graphic design work from home,web design jobs,web design company,web designers near me,web design inspiration,web design freelance,web design for small businesses,web design grid system,web design hourly rate,web design html,web design ideas,i'm web designer,web design pricing,web design services,web design services for small business,web design ui,web design websites">
-  <link href="css/graphic.css" rel="stylesheet" media="screen">
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="images/9em_logo_icon.png" />
-  <script src="jquery-3.6.0.js" type="text/javascript"></script>
-  <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+      content="9em Design Studio is a small design agency focused on graphic and web design services for the small and medium sized businesses.If your'e a large business or corporation we will be glad to help you with your needs.">
+    <meta name="keywords"
+      content="graphic design portfolio,graphic design artist,a graphic designer,a graphic designer website,graphic design business,graphic design freelance,graphic design hourly rate,graphic design ideas,i'm graphic designer,i need graphic designer,i do graphic design,graphic design job description,graphic design layout,graphic design maker,graphic design near me,graphic designer,graphic design online,graphic design projects,graphic design remote jobs,graphic design services,graphic design website,graphic design work,graphic design work from home,web design jobs,web design company,web designers near me,web design inspiration,web design freelance,web design for small businesses,web design grid system,web design hourly rate,web design html,web design ideas,i'm web designer,web design pricing,web design services,web design services for small business,web design ui,web design websites">
+    <link href="css/graphic.css" rel="stylesheet" media="screen">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/9em_logo_icon.png" />
+    <script src="jquery-3.6.0.js" type="text/javascript"></script>
+    <script src="script.js"></script>
 
-  <title>9em Design website</title>
+    <title>9em Design website</title>
 
-<style>
-#myImg1 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  width:100%;
-  object-fit:cover;
-  object-position:0 -150px;
-  max-width:375px;
-  height:120px;
-}
+    <style>
+      #myImg1 {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 -150px;
+        max-width: 375px;
+        height: 120px;
+      }
 
-#myImg1:hover {opacity: 0.7;}
+      #myImg1:hover {
+        opacity: 0.7;
+      }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 10px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 10px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+      }
 
-#myImg2 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  width:100%;
-  object-fit:cover;
-  object-position:0 -150px;
-  max-width:375px;
-  height:120px;
+      #myImg2 {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 -150px;
+        max-width: 375px;
+        height: 120px;
 
-}
+      }
 
-#myImg2:hover {opacity: 0.7;}
+      #myImg2:hover {
+        opacity: 0.7;
+      }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+      }
 
-#myImg3 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  width:100%;
-  object-fit:cover;
-  object-position:0 -150px;
-  max-width:375px;
-  height:120px;
-}
+      #myImg3 {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 -150px;
+        max-width: 375px;
+        height: 120px;
+      }
 
-#myImg3:hover {opacity: 0.7;}
+      #myImg3:hover {
+        opacity: 0.7;
+      }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-#myImg4 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  width:100%;
-  object-fit:cover;
-  object-position:0 -150px;
-  max-width:375px;
-  height:120px;
-}
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+      }
 
-#myImg4:hover {opacity: 0.7;}
+      #myImg4 {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 -150px;
+        max-width: 375px;
+        height: 120px;
+      }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 10px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+      #myImg4:hover {
+        opacity: 0.7;
+      }
 
-#myImg5 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  width:100%;
-  object-fit:cover;
-  object-position:0 -150px;
-  max-width:375px;
-  height:120px;
- }
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 10px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+      }
 
-#myImg5:hover {opacity: 0.7;}
+      #myImg5 {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 -150px;
+        max-width: 375px;
+        height: 120px;
+      }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 100%;
-  max-width: 700px;
+      #myImg5:hover {
+        opacity: 0.7;
+      }
 
-}
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+      }
 
-/* Caption of Modal Image */
-#caption1 {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 300px;
-}
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 700px;
 
-#caption2 {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 300px;
-}
-#caption3 {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 300px;
-}
-#caption4 {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 300px;
-}
-#caption5 {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 300px;
-}
+      }
 
-/* Add Animation */
-.modal-content, #caption1,#caption2, #caption3, #caption4, #caption5 {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
+      /* Caption of Modal Image */
+      #caption1 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 300px;
+      }
 
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)}
-  to {-webkit-transform:scale(1)}
-}
+      #caption2 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 300px;
+      }
 
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
+      #caption3 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 300px;
+      }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
+      #caption4 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 300px;
+      }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
- }
+      #caption5 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 300px;
+      }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-</style>
+      /* Add Animation */
+      .modal-content,
+      #caption1,
+      #caption2,
+      #caption3,
+      #caption4,
+      #caption5 {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
 
-</head>
-<body>
-  <div class="container">
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(0)
+        }
 
-    <header>
-      <div id='cssmenu'>
-        <ul>
-          <li>
-            <a href='index.html'>Home</a>
-          </li>
-          <li class='active has-sub'>
-            <a href="#">Products</a>
-            <ul>
-              <li>
-                <a href="graphic.html">Graphic Design</a>
-              </li>
-              <li>
-                <a href="web.html">Web Design</a>
-              </li>
-            </ul>
-          </li>
+        to {
+          -webkit-transform: scale(1)
+        }
+      }
 
-          <li>
-            <!--class="has-sub"-->
-            <a href="about.html">About Me</a>
+      @keyframes zoom {
+        from {
+          transform: scale(0)
+        }
 
-          </li>
-          <li class="has-sub">
-          <a href="#">Contact 9em design</a>
+        to {
+          transform: scale(1)
+        }
+      }
+
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px) {
+        .modal-content {
+          width: 100%;
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header>
+        <div id='cssmenu'>
           <ul>
-                    <li>
-                        <a href='quotation.html'>free quotation</a>
-                    </li>
-                    <li>
-                        <a href='drop_line.html'>drop us a line</a>
-                    </li>
-                </ul>
+            <li>
+              <a href='index.html'>Home</a>
+            </li>
+            <li class='active has-sub'>
+              <a href="#">Products</a>
+              <ul>
+                <li>
+                  <a href="graphic.html">Graphic Design</a>
+                </li>
+                <li>
+                  <a href="web.html">Web Design</a>
+                </li>
+              </ul>
+            </li>
 
-          </li>
-        </ul>
-      </div>
-      <svg id="logo" version="1.1" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title>logo 9em</title>
-        <g transform="translate(-56.238 -125.48)">
-          <rect x="56.136" y="125.48" width="200.1" height="220" style="color-rendering:auto;color:#000000;fill-rule:evenodd;fill:#150a00;image-rendering:auto;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000" />
-        </g>
-        <g transform="translate(0 60.935)">
-          <g transform="matrix(1.3085 0 0 1.3085 -49.973 -140.74)" style="fill:#ffffff;stroke-width:.98465">
-            <text x="52.75425" y="202.22461" style="fill:#a58241;font-family:Georgia;font-size:16px;letter-spacing:0px;line-height:125%;stroke-width:.98465px;word-spacing:0px" xml:space="preserve">
-              <tspan x="52.75425" y="202.22461" dy="0" style="fill:#a58241;font-family:Roboto;font-size:160px;letter-spacing:0px;stroke-width:.98465px;word-spacing:0px">9</tspan>
-            </text>
-            <text x="125.85661" y="202.90096" style="fill:#a58241;font-family:Georgia;font-size:16px;letter-spacing:0px;line-height:125%;stroke-width:.98465px;word-spacing:0px" xml:space="preserve">
-              <tspan x="125.85661" y="202.90096" style="fill:#a58241;font-family:Roboto;font-size:32px;stroke-width:.98465px">em</tspan>
-            </text>
-          </g>
-        </g>
-      </svg>
-  </header>
+            <li>
+              <!--class="has-sub"-->
+              <a href="about.html">About Me</a>
 
-    <aside id="top" class=" sidebar">
-      <h3>Quick links 9em</h3>
-      <ul class="ULpad">
-      <li><a href="graphic_services.html">Graphic Design</a></li>
-      <li><a href="web_services.html">Web Design</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="quotation.html">Contact 9em Design</a></li>
-      <li><a href="drop_line.html">Drop me a line</a></li>
-      </ul><br><br><br>
-      <h3>9em Design Mission Statement</h3>
-      <p class="justified"> 9em Design brings value added design at competitive prices to the market while helping cutomers solve visual problems in a professional manner.</p>
+            </li>
+            <li class="has-sub">
+              <a href="#">Contact 9em design</a>
+              <ul>
+                <li>
+                  <a href='quotation.html'>free quotation</a>
+                </li>
+                <li>
+                  <a href='drop_line.html'>drop us a line</a>
+                </li>
+              </ul>
 
-    </aside>
-    <section class="content">
-    <div><video  class="video" src="video/Abstract_Paint6.mp4" playsinline autoplay muted loop></video></div>
-    <div class="definition">
-      <h2>Abstract</h2>
-      <p>\ ab-ˌstrakt \<br>
-    Abstract art uses visual language of shape, form, color and line to create a composition which may exist with a degree of independence from visual references in the world.</p>
-    </div>
-
-    </section>
-
-    <section class="container_content1 flex_work">
-      <div class="image"><img id="myImg1" src="images/sparkling.png" alt="Invitation card for christmas party Sonrisa"> <p class="caption justified">We used imagery with christmas balls with glitters and sparkling objects
-      the main theme we used a logotype treatment with stars in random order above the lettertype to suggest sparkling, the font choice was an playful type which represents the light and an elegant type which represents celebration since the venue was at an 4 star hotel the combination worked fine for the client.
-</p><div id="myModal1" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01">
-      <div id="caption1">
+            </li>
+          </ul>
         </div>
+        <svg id="logo" version="1.1" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+          <title>logo 9em</title>
+          <path d="m-0.102 1.27e-5h201v221h-201z" style="fill-rule:evenodd;fill:#150a00" />
+          <g style="fill:#a58241;stroke-width:1.29px" aria-label="9">
+            <path
+              d="m104 119q-5.93 7.05-14.2 11.3-8.18 4.29-18 4.29-12.9 0-22.5-6.34-9.51-6.34-14.7-17.8-5.21-11.6-5.21-25.5 0-14.9 5.62-26.9 5.72-12 16.2-18.3 10.4-6.34 24.3-6.34 22.1 0 34.8 16.6 12.8 16.5 12.8 45v5.52q0 43.4-17.2 63.5-17.2 19.9-51.8 20.4h-3.68v-15.9h3.99q23.4-0.409 36-12.2 12.6-11.9 13.7-37.4zm-29.1 0q9.51 0 17.5-5.83 8.08-5.83 11.8-14.4v-7.56q0-18.6-8.08-30.3-8.08-11.7-20.4-11.7-12.5 0-20 9.61-7.56 9.51-7.56 25.1 0 15.2 7.26 25.1 7.36 9.81 19.6 9.81z" />
+          </g>
+          <g style="fill:#a58241;stroke-width:1.29px" aria-label="em">
+            <path
+              d="m127 186q-4.5 0-7.32-2.94-2.82-2.96-2.82-7.91v-0.695q0-3.29 1.25-5.87 1.27-2.6 3.52-4.05 2.27-1.47 4.91-1.47 4.31 0 6.71 2.84 2.39 2.84 2.39 8.14v1.57h-15q0.0818 3.27 1.9 5.3 1.84 2 4.66 2 2 0 3.39-0.818 1.39-0.818 2.43-2.17l2.31 1.8q-2.78 4.27-8.34 4.27zm-0.47-19.8q-2.29 0-3.84 1.68-1.55 1.66-1.92 4.66h11.1v-0.286q-0.164-2.88-1.55-4.46-1.39-1.59-3.76-1.59z" />
+            <path
+              d="m143 164 0.102 2.45q2.43-2.86 6.56-2.86 4.64 0 6.32 3.56 1.1-1.59 2.86-2.58 1.78-0.981 4.19-0.981 7.28 0 7.4 7.71v14.8h-3.78v-14.6q0-2.37-1.08-3.54-1.08-1.19-3.64-1.19-2.11 0-3.5 1.27-1.39 1.25-1.62 3.37v14.7h-3.8v-14.5q0-4.83-4.72-4.83-3.72 0-5.09 3.17v16.2h-3.78v-22.1z" />
+          </g>
+        </svg>
+      </header>
+
+      <aside id="top" class=" sidebar">
+        <h3>Quick links 9em</h3>
+        <ul class="ULpad">
+          <li><a href="graphic_services.html">Graphic Design</a></li>
+          <li><a href="web_services.html">Web Design</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="quotation.html">Contact 9em Design</a></li>
+          <li><a href="drop_line.html">Drop me a line</a></li>
+        </ul><br><br><br>
+        <h3>9em Design Mission Statement</h3>
+        <p class="justified"> 9em Design brings value added design at competitive prices to the market while helping
+          cutomers solve visual problems in a professional manner.</p>
+
+      </aside>
+      <section class="content">
+        <div><video class="video" src="video/Abstract_Paint6.mp4" playsinline autoplay muted loop></video></div>
+        <div class="definition">
+          <h2>Abstract</h2>
+          <p>\ ab-ˌstrakt \<br>
+            Abstract art uses visual language of shape, form, color and line to create a composition which may exist
+            with a degree of independence from visual references in the world.</p>
+        </div>
+
+      </section>
+
+      <section class="container_content1 flex_work">
+        <div class="image"><img id="myImg1" src="images/sparkling.png"
+            alt="Invitation card for christmas party Sonrisa">
+          <p class="caption justified">We used imagery with christmas balls with glitters and sparkling objects
+            the main theme we used a logotype treatment with stars in random order above the lettertype to suggest
+            sparkling, the font choice was an playful type which represents the light and an elegant type which
+            represents celebration since the venue was at an 4 star hotel the combination worked fine for the client.
+          </p>
+          <div id="myModal1" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption1">
+            </div>
+          </div>
+
+        </div>
+        <div class="image"><img id="myImg2" src="images/brochure.png" alt="Brochure for apartments BBB">
+          <p class="caption justified">We choose a playful approach to the brochure where we use a tree as a methafor
+            for investment since you have to plant a tree and maintain it for it to grow and the fruits are the fruits
+            it gives.</p>
+          <div id="myModal2" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02">
+            <div id="caption2"></div>
+          </div>
+        </div>
+        <div class="image"><img id="myImg3" src="images/fashion.jpg" alt="Ad concept for a fashion boutique">
+          <p class="caption justified">We went with a double exposuWe used stock imagery and a relax red/pink color to
+            resemble the confort of home and active nature of exercise.The man disiplines are around the subject with a
+            motivational message on the right.re look for the poster and bright neon colors. the type is a sleek
+            sans-serif which gives it a elgent but modern feel to it all.
+          </p>
+          <div id="myModal3" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img03">
+            <div id="caption3"></div>
+          </div>
+        </div>
+        <div class="image"><img id="myImg4" src="images/home_gym.png" alt="Ad home training">
+          <p class="caption justified">We used stock imagery and a relax red/pink color to resemble the confort of home
+            and active nature of exercise.The man disiplines are around the subject with a motivational message on the
+            right.</p>
+          <div id="myModal4" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img04">
+            <div id="caption4"></div>
+          </div>
+        </div>
+        <div class="image"><img id="myImg5" src="images/newlogo.png" alt="logos concept for BBB">
+          <p class="caption justified">We redesigned the logo to resemble construction methods (foundation,rebar meshes
+            etc). </p>
+          <div id="myModal5" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img05">
+            <div id="caption5"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="highlight">
+        <nav id="footer_links">
+          <nav id="footer_links">
+            <a href="index.html">Home</a>
+            <a href="graphic_services.html">Graphic Design Services</a>
+            <a href="web_services.html">Web Design Services</a>
+            <a href="graphic.html">Graphic Portfolio</a>
+            <a href="web.html">Web Portfolio</a>
+            <a href="about.html">About Me</a>
+            <a href="quotation.html">Free Quotation</a>
+            <a href="drop_line.html">Drop me a line</a>
+          </nav>
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
+              style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is
+          licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+            Attribution 4.0 International License</a>
+      </footer>
     </div>
 
-      </div>
-      <div class="image"><img id="myImg2" src="images/brochure.png" alt="Brochure for apartments BBB"> <p class="caption justified">We choose a playful approach to the brochure where we use a tree as a methafor for investment since you have to plant a tree and maintain it for it to grow and the fruits are the fruits it gives.</p><div id="myModal2" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img02">
-      <div id="caption2"></div>
-    </div>
-</div>
-      <div class="image"><img id="myImg3" src="images/fashion.jpg" alt="Ad concept for a fashion boutique"><p class="caption justified">We went with a double exposuWe used stock imagery and a relax red/pink color to resemble the confort of home and active nature of exercise.The man disiplines are around the subject with a motivational message on the right.re look for the poster and bright neon colors. the type is a sleek  sans-serif which gives it a elgent but modern feel to it all.
-</p>    <div id="myModal3" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img03">
-      <div id="caption3"></div>
-    </div>
-</div>
-      <div class="image"><img id="myImg4" src="images/home_gym.png" alt="Ad home training"><p class="caption justified">We used stock imagery and a relax red/pink color to resemble the confort of home and active nature of exercise.The man disiplines are around the subject with a motivational message on the right.</p> <div id="myModal4" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img04">
-      <div id="caption4"></div>
-    </div>
-   </div>
-      <div class="image"><img id="myImg5" src="images/newlogo.png" alt="logos concept for BBB"><p class="caption justified">We redesigned the logo to resemble construction methods (foundation,rebar meshes etc). </p><div id="myModal5" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img05">
-      <div id="caption5"></div>
-    </div></div>
-    </section>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal1");
 
-    <footer class="highlight">
-      <nav id="footer_links">
-      <nav  id="footer_links">
-        <a href="index.html">Home</a>
-        <a href="graphic_services.html">Graphic Design Services</a>
-        <a href="web_services.html">Web Design Services</a>
-        <a href="graphic.html">Graphic Portfolio</a>
-        <a href="web.html">Web Portfolio</a>
-        <a href="about.html">About Me</a>
-        <a href="quotation.html">Free Quotation</a>
-        <a href="drop_line.html">Drop me a line</a>
-      </nav>
-          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license"
-        href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
-    </footer>
-  </div>
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg1");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption1");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
 
-  <script>
-// Get the modal
-var modal = document.getElementById("myModal1");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg1");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption1");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+      // Get the modal
+      var modal = document.getElementById("myModal2");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg2");
+      var modalImg = document.getElementById("img02");
+      var captionText = document.getElementById("caption2");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
 
-// Get the modal
-var modal = document.getElementById("myModal2");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[1];
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg2");
-var modalImg = document.getElementById("img02");
-var captionText = document.getElementById("caption2");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[1];
+      // Get the modal
+      var modal = document.getElementById("myModal3");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg3");
+      var modalImg = document.getElementById("img03");
+      var captionText = document.getElementById("caption3");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
 
-// Get the modal
-var modal = document.getElementById("myModal3");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[2];
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg3");
-var modalImg = document.getElementById("img03");
-var captionText = document.getElementById("caption3");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[2];
+      // Get the modal
+      var modal = document.getElementById("myModal4");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg4");
+      var modalImg = document.getElementById("img04");
+      var captionText = document.getElementById("caption4");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
 
-// Get the modal
-var modal = document.getElementById("myModal4");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[3];
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg4");
-var modalImg = document.getElementById("img04");
-var captionText = document.getElementById("caption4");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[3];
+      // Get the modal
+      var modal = document.getElementById("myModal5");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg5");
+      var modalImg = document.getElementById("img05");
+      var captionText = document.getElementById("caption5");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
 
-// Get the modal
-var modal = document.getElementById("myModal5");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[4];
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg5");
-var modalImg = document.getElementById("img05");
-var captionText = document.getElementById("caption5");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[4];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
- </script>
-</body>
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
 
 
 </html>
