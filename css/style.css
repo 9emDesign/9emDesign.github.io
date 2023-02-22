@@ -1,18 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 10pt;
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: 'Roboto';
   src: url('../font/Roboto-Regular.ttf');
 }
 
 @font-face {
-  font-family: Roboto Light;
-  src: url('../font/Roboto-light.ttf');
+  font-family: 'Roboto Light';
+  src: url('../font/Roboto-Light.ttf');
 
 }
 
@@ -310,7 +310,7 @@
 
   }
 
-.font{ font-family: Roboto Light,sans-serif;}
+.font{ font-family: 'Roboto Light',sans-serif;}
 
   .position1 a:link {
     color: snow;
